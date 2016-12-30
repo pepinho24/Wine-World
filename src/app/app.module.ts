@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { ArticlesListComponent } from './components/articles-list/articles-list.component';
 import { routes } from './routes';
 import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticlesListComponent,
-    AboutComponent
+    AboutComponent,
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
