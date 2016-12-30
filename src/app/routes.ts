@@ -3,6 +3,8 @@ import { ModuleWithProviders } from '@angular/core';
 import { ArticlesListComponent } from './components/articles-list/articles-list.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 export const routes: ModuleWithProviders = RouterModule.forRoot([
     {
@@ -14,6 +16,12 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([
     }, {
         path: 'about',
         component: AboutComponent
+    }, {
+        path: 'register',
+        component: RegisterComponent
+    }, {
+        path: 'login',
+        component: LoginComponent
     }, {
         path: '**',
         redirectTo: ''
