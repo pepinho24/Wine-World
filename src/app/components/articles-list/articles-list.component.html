@@ -1,3 +1,8 @@
 <p>
   articles-list works!
 </p>
+<ul>
+  <li *ngFor='let articleId of articleIds'>
+     <a [routerLink]="['/article', articleId]">Go to details for article #{{ articleId }}</a>
+  </li>
+</ul>

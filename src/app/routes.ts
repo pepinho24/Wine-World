@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
 
 export const routes: ModuleWithProviders = RouterModule.forRoot([
     {
@@ -13,6 +14,9 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([
     }, {
         path: 'articles',
         component: ArticlesListComponent
+    }, {
+        path: 'article/:id',
+        component: ArticleDetailComponent
     }, {
         path: 'about',
         component: AboutComponent
