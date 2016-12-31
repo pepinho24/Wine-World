@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import 'rxjs/Rx';
 import { ArticlesListComponent } from './components/articles-list/articles-list.component';
 import { routes } from './routes';
 import { AboutComponent } from './components/about/about.component';
@@ -12,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
+import { ArticlesServiceService } from './services/articles-service.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { ArticleDetailComponent } from './components/article-detail/article-deta
     HttpModule,
     routes
   ],
-  providers: [],
+  providers: [ ArticlesServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,9 @@
-<p>
-  article-detail for article with id {{articleId}}!
-</p>
+<div *ngIf="article">
+  <h1>
+   {{ article.Title }}
+  </h1>
+  <p>{{article.Content}}</p>
+</div>
 <p>
   <button (click)="goToArticles()">Go back to All articles</button>
 </p>

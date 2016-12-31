@@ -1,8 +1,34 @@
 <p>
   articles-list works!
 </p>
-<ul>
-  <li *ngFor='let articleId of articleIds'>
-     <a [routerLink]="['/article', articleId]">Go to details for article #{{ articleId }}</a>
+<!--<ul>
+  <li *ngFor='let article of articles | async'>
+     <a [routerLink]="['/article', article.ArticleId]">#{{ article.ArticleId }} - {{ article.Title}}</a>
   </li>
-</ul>
+</ul>-->
+
+<div  *ngFor='let article of articles | async' class="panel">
+                <div class="panel-heading">
+                    <div class="text-center">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h3 class="pull-left">{{ article.Title}}</h3>
+                            </div>
+                            <div class="col-sm-3">
+                                <h4 class="pull-right">
+                                <small><em>2014-07-30<br>18:30:00</em></small>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="panel-body">
+                {{ article.Content }}<a [routerLink]="['/article', article.ArticleId]">Read more</a>
+            </div>
+            
+            <div class="panel-footer">
+              <strong>Created by: </strong> <em>{{article.Author}}</em>
+                <!--<span class="label label-default">Welcome</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>-->
+            </div>
+        </div>
