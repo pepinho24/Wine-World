@@ -14,6 +14,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
 import { ArticlesServiceService } from './services/articles-service.service';
+import { TruncatePipe } from './core/truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ArticlesServiceService } from './services/articles-service.service';
     NavbarComponent,
     RegisterComponent,
     LoginComponent,
-    ArticleDetailComponent
+    ArticleDetailComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,

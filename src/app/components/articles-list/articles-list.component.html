@@ -24,7 +24,7 @@
                 </div>
                 
             <div class="panel-body">
-                {{ article.Content }}<a [routerLink]="['/article', article.ArticleId]">Read more</a>
+                {{ article.Content | truncate: [200] }}<a [routerLink]="['/article', article.ArticleId]">Read more</a>
             </div>
             
             <div class="panel-footer">
