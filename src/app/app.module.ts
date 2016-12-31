@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import 'rxjs/Rx';
+import {Observable, Observer} from 'rxjs/Rx';
+
 import { ArticlesListComponent } from './components/articles-list/articles-list.component';
 import { routes } from './routes';
 import { AboutComponent } from './components/about/about.component';
@@ -15,6 +16,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
 import { ArticlesServiceService } from './services/articles-service.service';
 import { TruncatePipe } from './core/truncate.pipe';
+import { Authentication } from './core/authentication';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,10 @@ import { TruncatePipe } from './core/truncate.pipe';
     BrowserModule,
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     routes
   ],
-  providers: [ ArticlesServiceService],
+  providers: [ArticlesServiceService, Authentication],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
