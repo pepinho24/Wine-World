@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { isLoggedin } from '../../core/is-loggedin';
-import { Authentication } from '../../core/authentication';
+import { isLoggedin } from '../../services/is-loggedin';
+import { Authentication } from '../../services/authentication';
 import { Router } from '@angular/router';
 
 @Component({

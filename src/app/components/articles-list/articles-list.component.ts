@@ -3,8 +3,8 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { ArticlesServiceService } from '../../services/articles-service.service';
-import { Article } from '../../core/Article';
+import { ArticlesServiceService } from '../../services/articles.service';
+import { Article } from '../../models/Article';
 
 @Component({
   selector: 'app-articles-list',

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Article } from '../core/Article';
+import { Article } from '../models/Article';
 
 let ARTICLES = [new Article(
     1,

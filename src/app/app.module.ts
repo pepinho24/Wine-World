@@ -14,9 +14,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
-import { ArticlesServiceService } from './services/articles-service.service';
-import { TruncatePipe } from './core/truncate.pipe';
-import { Authentication } from './core/authentication';
+import { ArticlesServiceService } from './services/articles.service';
+import { TruncatePipe } from './pipes/truncate.pipe';
+import { Authentication } from './services/authentication';
 
 @NgModule({
   declarations: [
