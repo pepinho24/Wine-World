@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {Observable, Observer} from 'rxjs/Rx';
+import { Observable, Observer } from 'rxjs/Rx';
 
 import { ArticlesListComponent } from './components/articles-list/articles-list.component';
 import { routes } from './routes';
