@@ -24,6 +24,7 @@ import { AuthenticationService } from './services/authentication.service';
 
 import { ArticlesServiceService } from './services/articles.service';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { ArticleDetailsSmallComponent } from './components/article-details-small/article-details-small.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     FooterComponent,
     WineListSmallComponent,
     WineListComponent,
-    WineDetailComponent
+    WineDetailComponent,
+    ArticleDetailsSmallComponent
   ],
   imports: [
     BrowserModule,
