@@ -9,6 +9,16 @@ import { Wine } from '../../models/wine';
 })
 export class WineListComponent implements OnInit {
     wine: Wine[];
+    sortOptions: any[] = [
+        {label: 'Year', value: 'year'},
+        {label: 'Retail Price', value: 'retailPrice'}
+    ];
+    orderOptions: any[] = [
+        {label: 'Ascending', value: 'asc'},
+        {label: 'Descending', value: 'desc'}
+    ];
+    sort: string= 'year';
+    order: string = 'asc';
 
     constructor(private wineService: WineService) {
     }

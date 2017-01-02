@@ -25,6 +25,9 @@ import { WineService } from './services/wine.service';
 
 import { ArticlesServiceService } from './services/articles.service';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { SortWinePipe } from './pipes/sort-wine.pipe';
+import { SearchArticlesPipe } from './pipes/search-articles.pipe';
+
 import { ArticleDetailsSmallComponent } from './components/article-details-small/article-details-small.component';
 import { ArticleCreateComponent } from './components/article-create/article-create.component';
 
@@ -47,6 +50,8 @@ import { ArticleCreateComponent } from './components/article-create/article-crea
     LoginComponent,
     ArticleDetailComponent,
     TruncatePipe,
+    SortWinePipe,
+    SearchArticlesPipe,
     FooterComponent,
     WineListSmallComponent,
     WineListComponent,

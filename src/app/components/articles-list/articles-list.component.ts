@@ -17,6 +17,8 @@ import { UsersService } from '../../services/users.service';
 export class ArticlesListComponent implements OnInit {
   articles: Observable<Article[]>;
   isLoggedIn: boolean = !!this.users.loggedUser();
+  search: string;
+
   constructor(private service: ArticlesServiceService,
     private route: ActivatedRoute,
     private router: Router,

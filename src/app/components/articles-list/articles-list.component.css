@@ -1,0 +1,6 @@
+.form-control, .btn {
+    display: inline-block;
+    width: 250px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
