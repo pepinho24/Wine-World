@@ -13,5 +13,4 @@ export class ArticleDetailsSmallComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

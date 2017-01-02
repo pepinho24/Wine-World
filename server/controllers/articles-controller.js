@@ -14,10 +14,8 @@ module.exports = function (db) {
     }
 
     function getById(req, res) {
-        
-        let articleId = +req.params.id;
-        console.log("articleId"+articleId);
-        debugger
+
+        let articleId = req.params.id;
         let article = db("articles").find({
             ArticleId: articleId
         });
@@ -34,23 +32,25 @@ module.exports = function (db) {
     }
 
     function post(req, res) {
-        let user = req.user;
-
-        if (!user) {
+        let article = req.body;
+        if (!article.author) {
             return res.status(401)
                 .send("User not authorized");
         }
 
-        let article = req.body;
+        var dbArticle = {};
+        dbArticle.Title = article.title;
+        dbArticle.CreatedOn = new Date();
+        dbArticle.Author = article.author.username;
+        dbArticle.Content = article.content;
 
-        article.CreatedOn = new Date();
-
-        db("articles").insert(article);
+        db("articles").insert(dbArticle);
+        dbArticle.ArticleId = dbArticle.id;
 
         return res.status(201)
-            .send({
-                result: article
-            });
+        .send({
+            result: dbArticle
+        });
     }
 
     function put(req, res) {

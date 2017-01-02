@@ -25,6 +25,7 @@ import { AuthenticationService } from './services/authentication.service';
 import { ArticlesServiceService } from './services/articles.service';
 import { TruncatePipe } from './pipes/truncate.pipe';
 import { ArticleDetailsSmallComponent } from './components/article-details-small/article-details-small.component';
+import { ArticleCreateComponent } from './components/article-create/article-create.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { ArticleDetailsSmallComponent } from './components/article-details-small
     WineListSmallComponent,
     WineListComponent,
     WineDetailComponent,
-    ArticleDetailsSmallComponent
+    ArticleDetailsSmallComponent,
+    ArticleCreateComponent
   ],
   imports: [
     BrowserModule,

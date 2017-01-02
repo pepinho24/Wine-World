@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
       'username': [null, Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(30)])],
       // We can use more than one validator per field. If we want to use more than one validator we have to wrap our array of validators with a Validators.compose function. Here we are using a required, minimum length and maximum length validator.
       'password': [null, Validators.compose([Validators.required, Validators.minLength(5)])],
-      'confirmPassword': [null, Validators.required]// ,
+      'confirmPassword': [null, Validators.compose([Validators.required, Validators.minLength(5)])]// ,
       // 'hiking': false,
       // 'running': false,
       // 'swimming': false

@@ -18,14 +18,7 @@ export class ArticlesListComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router) {
   }
-  // constructor(http: Http) {
-  //   http.get('../../app/data/articles.json')
-  //     // Call map on the response observable to get the parsed people object
-  //     .map(res => res.json())
-  //     // Subscribe to the observable to get the parsed people object and attach it to the
-  //     // component
-  //     .subscribe(res => this.articles = res);
-  // }
+
   ngOnInit() {
     this.articles = this.route.params
       .switchMap((params: Params) => {
