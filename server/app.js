@@ -22,6 +22,13 @@ app.get("/api/users", usersController.get);
 app.post("/api/users", usersController.post);
 app.put("/api/auth", usersController.put);
 
+// Articles routes
+let articlesController = require("./controllers/articles-controller")(db);
+app.get("/api/articles", articlesController.get);
+app.post("/api/articles", articlesController.post);
+app.put("/api/articles/:id", articlesController.put);
+app.get("/api/articles/:id", articlesController.getById);
+
 // Fortune cookies
 let cookiesController = require("./controllers/cookies-controller")(db);
 app.get("/api/cookies", cookiesController.get);

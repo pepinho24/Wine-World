@@ -7,12 +7,12 @@ import { Wine } from '../../models/wine';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-    topSellingWine: Wine[];
-    recommendedWine: Wine[];
+  topSellingWine: Wine[];
+  recommendedWine: Wine[];
 
   constructor() {
-    this.topSellingWine = [new Wine('test1')];
-    this.recommendedWine = [new Wine('test2')];
+    this.topSellingWine = [new Wine('test1', 1999, '', '', 4, 4, '', { retail: 3, wholesale: 4 }, 4)];
+    this.recommendedWine = [new Wine('test2', 1999, '', '', 4, 4, '', { retail: 3, wholesale: 4 }, 4)];
   }
 
   ngOnInit() {
