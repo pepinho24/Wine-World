@@ -56,6 +56,14 @@
       "usernameToLower": "testuserasdasd",
       "id": "844c4d91-19cf-47aa-9ba4-73a7ffb97fed",
       "authKey": "844c4d91-19cf-47aa-9ba4-73a7ffb97fedAEWoAwHzVrDhZYOezSZUCWYe"
+    },
+    {
+      "username": "asdasd",
+      "password": "asdasd",
+      "confirmPassword": "asdasd",
+      "usernameToLower": "asdasd",
+      "id": "47f9c417-e2c1-49b4-a7bc-15f0ec16d9f8",
+      "authKey": "47f9c417-e2c1-49b4-a7bc-15f0ec16d9f8CcELvWiiPhBFarJZWdLqTfEb"
     }
   ],
   "cookies": [

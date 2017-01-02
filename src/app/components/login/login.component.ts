@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-
-<<<<<<< HEAD
-=======
-import { Authentication } from '../../services/authentication';
->>>>>>> b1f39c24c8a4dc30783af47f567e17bd3942d04b
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../../services/authentication.service';
 
