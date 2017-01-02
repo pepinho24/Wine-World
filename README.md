@@ -14,3 +14,5 @@ You can find the project requirements [here](https://github.com/TelerikAcademy/A
 This project was initialized with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
 To start the application run `npm start` and navigate to `http://localhost:4200/`.
+
+To start the server change directory to /server `cd server` and run `node app.js`. The server will be running at `http://localhost:3000/`

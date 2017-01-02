@@ -234,11 +234,11 @@
   ],
   "wine": [
     {
-      "name": "test wine",
+      "name": "Cabernet Sauvignon",
       "type": "red",
       "year": 2000,
-      "origin": "California, US",
-      "description": "test1",
+      "origin": "New Zealand",
+      "description": "The classic profile of Cabernet Sauvignon tends to be full-bodied wines with high tannins and noticeable acidity that contributes to the wine's aging potential. In cooler climates, Cabernet Sauvignon tends to produce wines with blackcurrant notes that can be accompanied by green bell pepper notes, mint and cedar which will all become more pronounced as the wine ages. In more moderate climates the blackcurrant notes are often seen with black cherry and black olives notes while in very hot climates the currant flavors can veer towards the over-ripe and \"jammy\" side. In parts of Australia, particularly the Coonawarra wine region of South Australia, Cabernet Sauvignon wines tend to have a characteristic eucalyptus or menthol notes.",
       "sweetness": 5,
       "abv": 16,
       "image": "wine1.jpg",
@@ -246,14 +246,16 @@
         "retail": 40,
         "wholesale": 30
       },
-      "wholesaleQuantity": 30
+      "wholesaleQuantity": 30,
+      "recommended": true,
+      "sold": 30
     },
     {
-      "name": "test wine2",
+      "name": "Cabernet Sauvignon US",
       "type": "red",
       "year": 1990,
       "origin": "California, US",
-      "description": "test2",
+      "description": "The classic profile of Cabernet Sauvignon tends to be full-bodied wines with high tannins and noticeable acidity that contributes to the wine's aging potential. In cooler climates, Cabernet Sauvignon tends to produce wines with blackcurrant notes that can be accompanied by green bell pepper notes, mint and cedar which will all become more pronounced as the wine ages. In more moderate climates the blackcurrant notes are often seen with black cherry and black olives notes while in very hot climates the currant flavors can veer towards the over-ripe and \"jammy\" side. In parts of Australia, particularly the Coonawarra wine region of South Australia, Cabernet Sauvignon wines tend to have a characteristic eucalyptus or menthol notes.",
       "sweetness": 3,
       "abv": 25,
       "image": "wine2.jpg",
@@ -261,14 +263,16 @@
         "retail": 50,
         "wholesale": 30
       },
-      "wholesaleQuantity": 20
+      "wholesaleQuantity": 20,
+      "recommended": false,
+      "sold": 5
     },
     {
-      "name": "test wine 3",
+      "name": "Cabernet Sauvignon Aussie",
       "type": "red1",
       "year": 2005,
-      "origin": "California, US",
-      "description": "test3",
+      "origin": "Australia",
+      "description": "The classic profile of Cabernet Sauvignon tends to be full-bodied wines with high tannins and noticeable acidity that contributes to the wine's aging potential. In cooler climates, Cabernet Sauvignon tends to produce wines with blackcurrant notes that can be accompanied by green bell pepper notes, mint and cedar which will all become more pronounced as the wine ages. In more moderate climates the blackcurrant notes are often seen with black cherry and black olives notes while in very hot climates the currant flavors can veer towards the over-ripe and \"jammy\" side. In parts of Australia, particularly the Coonawarra wine region of South Australia, Cabernet Sauvignon wines tend to have a characteristic eucalyptus or menthol notes.",
       "sweetness": 3,
       "abv": 20,
       "image": "wine3.jpg",
@@ -276,7 +280,60 @@
         "retail": 35,
         "wholesale": 20
       },
-      "wholesaleQuantity": 40
+      "wholesaleQuantity": 40,
+      "recommended": true,
+      "sold": 10
+    },
+    {
+      "name": "Merlot",
+      "type": "red1",
+      "year": 2000,
+      "origin": "France",
+      "description": "While Merlot is made across the globe, there tends to be two main styles. The \"International style\" favored by many New World wine regions tends to emphasize late harvesting to gain physiological ripeness and produce inky, purple colored wines that are full in body with high alcohol and lush, velvety tannins with intense, plum and blackberry fruit. While this international style is practiced by many Bordeaux wine producers, the traditional \"Bordeaux style\" of Merlot involves harvesting Merlot earlier to maintain acidity and producing more medium-bodied wines with moderate alcohol levels that have fresh, red fruit flavors (raspberries, strawberries) and potentially leafy, vegetal notes.",
+      "sweetness": 5,
+      "abv": 16,
+      "image": "wine1.jpg",
+      "price": {
+        "retail": 40,
+        "wholesale": 30
+      },
+      "wholesaleQuantity": 30,
+      "recommended": true,
+      "sold": 30
+    },
+    {
+      "name": "Merlot Cali",
+      "type": "red1",
+      "year": 1990,
+      "origin": "California, US",
+      "description": "While Merlot is made across the globe, there tends to be two main styles. The \"International style\" favored by many New World wine regions tends to emphasize late harvesting to gain physiological ripeness and produce inky, purple colored wines that are full in body with high alcohol and lush, velvety tannins with intense, plum and blackberry fruit. While this international style is practiced by many Bordeaux wine producers, the traditional \"Bordeaux style\" of Merlot involves harvesting Merlot earlier to maintain acidity and producing more medium-bodied wines with moderate alcohol levels that have fresh, red fruit flavors (raspberries, strawberries) and potentially leafy, vegetal notes.",
+      "sweetness": 3,
+      "abv": 25,
+      "image": "wine2.jpg",
+      "price": {
+        "retail": 50,
+        "wholesale": 30
+      },
+      "wholesaleQuantity": 20,
+      "recommended": false,
+      "sold": 5
+    },
+    {
+      "name": "Merlot",
+      "type": "red1",
+      "year": 2005,
+      "origin": "Bulgaria",
+      "description": "While Merlot is made across the globe, there tends to be two main styles. The \"International style\" favored by many New World wine regions tends to emphasize late harvesting to gain physiological ripeness and produce inky, purple colored wines that are full in body with high alcohol and lush, velvety tannins with intense, plum and blackberry fruit. While this international style is practiced by many Bordeaux wine producers, the traditional \"Bordeaux style\" of Merlot involves harvesting Merlot earlier to maintain acidity and producing more medium-bodied wines with moderate alcohol levels that have fresh, red fruit flavors (raspberries, strawberries) and potentially leafy, vegetal notes.",
+      "sweetness": 3,
+      "abv": 20,
+      "image": "wine3.jpg",
+      "price": {
+        "retail": 35,
+        "wholesale": 20
+      },
+      "wholesaleQuantity": 40,
+      "recommended": true,
+      "sold": 10
     }
   ]
 }

@@ -1,15 +1,18 @@
 <div class="container">
-    <div class="row" *ngFor="let w of wine">
-      <div class="col-md-3">
+    <strong>{{title}}</strong>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let w of wine">
         <div class="thumbnail">
-          <img src="{{'/images/' + w.image}}" alt="{{w.name}}">
+          <img src="{{'http://localhost:3000/images/' + w.image}}" alt="{{w.name}}">
           <div class="caption">
-            <h4>{{w.name}}</h4>
-            <h5>{{w.type}}</h5>
-            <p>{{w.description | truncate: [100]}}</p>
+            <h4>{{w.name | truncate: [20]}}</h4>
+            <strong>{{w.type}}, {{w.year}}</strong>
+            <p>{{w.origin}}</p>
             <a [routerLink]="[login]" class="btn btn-success" role="button">Buy Now!</a>
           </div>
         </div>
       </div>
     </div>
+  <div><a [routerLink]="['']">See more...</a></div>
+  <hr/>
 </div>

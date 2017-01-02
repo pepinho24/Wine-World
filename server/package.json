@@ -1,12 +1,11 @@
 {
-  "name": "fortune-cookies",
+  "name": "wine-world",
   "version": "1.0.0",
-  "description": "##  App description",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Doncho Minkov (donchominkov@gmail.com)",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
