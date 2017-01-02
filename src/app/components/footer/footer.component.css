@@ -1,0 +1,13 @@
+.container-fluid {
+    height: 100px;
+    padding: 30px 20px;
+    background-color: black;
+}
+
+a {
+    margin-right: 30px;
+}
+
+.project-descr {
+    margin-top: 10px;
+}
