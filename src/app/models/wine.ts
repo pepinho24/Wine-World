@@ -4,4 +4,8 @@ export class Wine {
             public sweetness: number, public abv: number, public image: string, public price: {retail?: number, wholesale?: number},
             public wholesaleQuantity: number) {
     }
+
+    getURIEncodedName() {
+        return encodeURIComponent(this.name);
+    }
 }

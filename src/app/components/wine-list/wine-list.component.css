@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+}
+
+.thumbnail {
+    position: relative;
+    height: 500px;
+}
+
+.thumbnail img {
+    max-height: 200px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.text-justify {
+    text-align: justify;
+}
