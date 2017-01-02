@@ -1,0 +1,17 @@
+.container {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.thumbnail {
+    height: 250px;
+    margin: 10px;
+}
+
+.thumbnail img {
+    max-height: 100px;
+}
+
+.thumbnail .btn {
+    margin-left: calc(50% - 40px);
+}

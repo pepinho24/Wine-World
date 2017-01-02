@@ -43,10 +43,10 @@ app.get("/api/my-cookie", myCookiesController.get);
 let categoriesController = require("./controllers/categories-controller")(db);
 app.get("/api/categories", categoriesController.get);
 
-let wineController = require('./controllers/wine')(db);
+const wineController = require('./controllers/wine')(db);
 app.get('/api/wine', wineController.getAll);
-app.get('api/wine/:name', wineController.getOne);
-
+app.get('/api/wine/:name', wineController.getOne);
+app.get('/api/wine/select/:selector', wineController.getSelected);
 
 let port = 3000;
 app.listen(port, () => console.log(`Server is running at http://localhost:${port}`));

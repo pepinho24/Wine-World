@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WineService } from '../../services/wine.service';
 import { Wine } from '../../models/wine';
 
 @Component({
@@ -10,13 +11,15 @@ export class HomeComponent implements OnInit {
   topSellingWine: Wine[];
   recommendedWine: Wine[];
 
-  constructor() {
-    this.topSellingWine = [new Wine('test1', 1999, '', '', 4, 4, '', { retail: 3, wholesale: 4 }, 4)];
-    this.recommendedWine = [new Wine('test2', 1999, '', '', 4, 4, '', { retail: 3, wholesale: 4 }, 4)];
+  constructor(private wineService: WineService) {
   }
 
   ngOnInit() {
+    this.wineService.getRecommended()
+      .then((wine: Wine[]) => this.recommendedWine = wine);
 
+    this.wineService.getTopSelling()
+      .then((wine: Wine[]) => this.topSellingWine = wine);
   }
 
 }

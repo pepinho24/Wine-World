@@ -1,10 +1,18 @@
 <div>
-  <h2 class="text-center">Wine World</h2>
-  <h3 class="text-center">We are happy to serve you our high quality wines!</h3>
-  <div class="top-wine-content">
-      <h5>Choose from our top selling products</h5>
-      <wine-list-small [wine]="topSellingWine"></wine-list-small>
-      <h5>Or trust our fine wine recommendations</h5>
-      <wine-list-small [wine]="recommendedWine"></wine-list-small>
+  <div class="branding">
+      <h1 class="text-center">Wine World</h1>
+      <h3 class="text-center">We are happy to serve you our high quality wines!</h3>
   </div>
+  <div class="top-wine-content">
+      <h4>Birthday celebration or fancy dinner? We've got you covered!</h4>
+      <wine-list-small [wine]="topSellingWine" [title]="'Choose from our top selling products'">
+      </wine-list-small>
+      <wine-list-small [wine]="recommendedWine" [title]="'Or trust our fine wine recommendations'">
+      </wine-list-small>
+  </div>
+  <h4>
+    Check out our <a [routerLink]="[articles]">articles</a> to learn fascinating facts about wine.
+    Become an expert today and impress your friends!
+    <br><br>
+  </h4>
 </div>

@@ -21,6 +21,7 @@ import { WineDetailComponent } from './components/wine-detail/wine-detail.compon
 
 import { UsersService } from './services/users.service';
 import { AuthenticationService } from './services/authentication.service';
+import { WineService } from './services/wine.service';
 
 import { ArticlesServiceService } from './services/articles.service';
 import { TruncatePipe } from './pipes/truncate.pipe';
@@ -28,6 +29,13 @@ import { ArticleDetailsSmallComponent } from './components/article-details-small
 
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
+    routes
+  ],
   declarations: [
     AppComponent,
     ArticlesListComponent,
@@ -44,14 +52,7 @@ import { ArticleDetailsSmallComponent } from './components/article-details-small
     WineDetailComponent,
     ArticleDetailsSmallComponent
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    ReactiveFormsModule,
-    routes
-  ],
-  providers: [ArticlesServiceService, UsersService,  AuthenticationService],
+  providers: [ArticlesServiceService, UsersService,  AuthenticationService, WineService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
