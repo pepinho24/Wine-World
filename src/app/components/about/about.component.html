@@ -1,3 +1,15 @@
-<p>
-  about works!
-</p>
+<div>
+    <div class="branding"><h1>Wine World</h1></div>
+    <img src="/assets/dorne.png" alt="location" class="location">
+    <p>We are a family-run company located in the lovely western South.</p>
+    <p>Our customers include the world's most prosperous VIP personas and polititians.</p>
+    <p>Our techniques derive from traditions which have been successful for thousands of years.</p>
+    <p>It is said that our red wine is an elixir from the gods.</p>
+    <h4>With Wine World wine you are guaranteed to have a good time!</h4>
+    <img src="/assets/tyrion.jpg" alt="ambassador">
+    <div class="text-center">
+        <strong>If YOU want to know things too, subscribe to our newsletter</strong>
+        <input type="email" [(ngModel)]="email" placeholder="Your email" class="form-control">
+        <button (click)="subscribeToNewsletter()" class="btn btn-success">Join Now!</button>
+    </div>
+</div>

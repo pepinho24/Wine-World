@@ -1,0 +1,19 @@
+.branding {
+    margin-bottom: 30px;
+}
+
+img {
+    margin: 20px;
+}
+
+img.location {
+    float: left;
+    width: 300px;
+    margin-top: 0;
+}
+
+input {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+}

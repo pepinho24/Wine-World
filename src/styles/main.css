@@ -4,3 +4,9 @@ body {
     height: 100%;
     margin: 0;
 }
+
+.branding {
+    font-family: serif;
+    text-align: center;
+    border-bottom: 1px solid peachpuff;
+}
