@@ -1,3 +1,17 @@
-<div class="container-fluid">
-    hello!
+<div class="container">
+    <div class="col-md-4" *ngFor="let w of wine">
+        <a [routerLink]="['/wine', w.getURIEncodedName()]">
+          <div class="thumbnail">
+            <img src="{{'http://localhost:3000/images/' + w.image}}" alt="{{w.name}}">
+            <div class="caption text-center">
+              <h3>{{w.name | truncate: [50]}}</h3>
+              <strong class="float-right">{{w.origin + ', ' + w.year}}</strong>
+              <div class="text-justify">{{w.description | truncate: [300]}}</div>
+              <a [routerLink]="['/wine', w.getURIEncodedName()]" class="btn btn-success" role="button">Buy Now!</a>
+              <span *ngIf="w.price && w.price.retail">{{w.price.retail | currency:'USD':true:'1.2-2'}}</span>
+              <span *ngIf="w.price && w.price.wholesale">{{w.price.wholesale | currency:'USD':true:'1.2-2'}}</span>
+            </div>
+          </div>
+        </a>
+    </div>
 </div>

@@ -77,6 +77,15 @@
       "usernameToLower": "asdasd",
       "id": "d4bb9889-e2e9-4df3-bf10-a98027ae88a5",
       "token": "d4bb9889-e2e9-4df3-bf10-a98027ae88a5XxxHdPUuuuJOXuAlVoyZCRvu"
+    },
+    {
+      "username": "aaaaa",
+      "password": "aaaaa",
+      "confirmPassword": "aaaaa",
+      "usernameToLower": "aaaaa",
+      "id": "e6b14753-b577-41e9-8d27-cda6444f5a0c",
+      "token": "e6b14753-b577-41e9-8d27-cda6444f5a0cEtOGMYlYwfpswqoduVXecZSu",
+      level: 30
     }
   ],
   "articles": [
