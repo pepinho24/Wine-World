@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { isLoggedin } from '../../core/is-loggedin';
-import { Authentication } from '../../core/authentication';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'navbar',
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   username: string;
   isLoggedIn: boolean;
-  constructor(public auth: Authentication, public router: Router) {}
+  constructor(public auth: AuthenticationService, public router: Router) {}
 
   onLogout() {
     this.auth.logout()

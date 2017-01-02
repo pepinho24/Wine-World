@@ -38,7 +38,7 @@ module.exports = function(db) {
 
     function post(req, res) {
         let user = req.body;
-        if (!user || typeof user.username !== "string" || typeof user.passHash !== "string") {
+        if (!user || typeof user.username !== "string" || typeof user.password !== "string") {
             return res.status(400)
                 .send("Invalid user");
         }
@@ -67,7 +67,7 @@ module.exports = function(db) {
         let user = db("users").find({
             usernameToLower: reqUser.username.toLowerCase()
         });
-        if (!user || user.passHash !== reqUser.passHash) {
+        if (!user || user.password !== reqUser.password) {
             return res.status(404)
                 .send("Invalid username or password");
         }

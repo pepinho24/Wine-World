@@ -1,20 +1,21 @@
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
-
+import { Http, Headers } from '@angular/http';
 
 @Injectable()
-export class Authentication {
-  token: string;
+export class AuthenticationService {
 
-  constructor() {
+token: string;
+
+  constructor(private http: Http) {
     this.token = localStorage.getItem('token');
   }
 
   login(username: String, password: String) {
     /*
      * If we had a login api, we would have done something like this
-
-    return this.http.post('/auth/login', JSON.stringify({
+*/
+    return this.http.put('http://localhost:3000/api/auth', JSON.stringify({
         username: username,
         password: password
       }), {
@@ -22,23 +23,22 @@ export class Authentication {
           'Content-Type': 'application/json'
         })
       })
-      .map((res : any) => {
-        let data = res.json();
-        this.token = data.token;
+      .map((res: any) => {
+        let user = res.json();
+        this.token = user.token;
         localStorage.setItem('token', this.token);
+        localStorage.setItem('currentUser', user);
       });
 
-      for the purpose of this cookbook, we will just simulate that
-    */
-    if (username === 'test' && password === 'test') {
-      this.token = 'token';
-      localStorage.setItem('token', this.token);
-      localStorage.setItem('username', username.toString());
+    // if (username === 'test' && password === 'test') {
+    //   this.token = 'token';
+    //   localStorage.setItem('token', this.token);
+    //   localStorage.setItem('username', username.toString());
 
-      return Observable.of('token');
-    }
+    //   return Observable.of('token');
+    // }
 
-    return Observable.throw('authentication failure');
+    // return Observable.throw('authentication failure');
   }
 
   logout() {
@@ -58,8 +58,9 @@ export class Authentication {
 
     this.token = undefined;
     localStorage.removeItem('token');
-    localStorage.removeItem('username');
+    localStorage.removeItem('currentUser');
 
     return Observable.of(true);
   }
+
 }

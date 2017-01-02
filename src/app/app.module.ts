@@ -16,7 +16,8 @@ import { LoginComponent } from './components/login/login.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
 import { ArticlesServiceService } from './services/articles-service.service';
 import { TruncatePipe } from './core/truncate.pipe';
-import { Authentication } from './core/authentication';
+import { UsersService } from './services/users.service';
+import { AuthenticationService } from './services/authentication.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { Authentication } from './core/authentication';
     ReactiveFormsModule,
     routes
   ],
-  providers: [ArticlesServiceService, Authentication],
+  providers: [ArticlesServiceService, UsersService,  AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -48,6 +48,14 @@
       "usernameToLower": "john7",
       "id": "6f2569ff-3f4b-43d8-b5e6-83b0b607e5f1",
       "authKey": "6f2569ff-3f4b-43d8-b5e6-83b0b607e5f1PhFMLXTeuRACLPZMgJURTahS"
+    },
+    {
+      "username": "testuserasdasd",
+      "password": "asdasd",
+      "confirmPassword": "asdasd",
+      "usernameToLower": "testuserasdasd",
+      "id": "844c4d91-19cf-47aa-9ba4-73a7ffb97fed",
+      "authKey": "844c4d91-19cf-47aa-9ba4-73a7ffb97fedAEWoAwHzVrDhZYOezSZUCWYe"
     }
   ],
   "cookies": [

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
-import { Authentication } from '../../core/authentication';
 import { Router } from '@angular/router';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -11,15 +11,11 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
-  constructor(public auth: Authentication, fb: FormBuilder, public router: Router) {
+  constructor(public auth: AuthenticationService, fb: FormBuilder, public router: Router) {
     // Here we are using the FormBuilder to build out our form.
     this.loginForm = fb.group({
       'username': '',
-      'password': '',
-      'gender': 'Female',
-      'hiking': false,
-      'running': false,
-      'swimming': false
+      'password': ''
     });
   }
 
