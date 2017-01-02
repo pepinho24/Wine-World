@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
+import { UsersService } from './services/users.service';
+import { LoggedUser } from './core/LoggedUser';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  title = 'Welcome to the land of Wine!';
+export class AppComponent implements OnInit, DoCheck {
+  title = 'Wine World';
+  currentUser: LoggedUser;
+
+  constructor(private usersService: UsersService) { }
+
+  ngOnInit() {
+    this.currentUser = this.usersService.loggedUser();
+    console.log(this.currentUser);
+  }
+
+  ngDoCheck() {
+    this.currentUser = this.usersService.loggedUser();
+  }
 }

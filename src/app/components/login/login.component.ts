@@ -19,13 +19,16 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.auth.logout();
   }
   submitForm(value: any): void {
     this.auth.login(value.username, value.password)
       .subscribe(
-      (token: any) => { this.router.navigate(['../Home']); }
+      (token: any) => {
+        alert('Welcome back ' + value.username);
+        this.router.navigate(['/']);
+      }
       );
-    console.log(value);
   }
 
 }

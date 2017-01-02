@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response } from '@angular/http';
-import { User } from '../core/User';
+import { LoggedUser } from '../core/LoggedUser';
 import { AuthenticationService } from './authentication.service';
+import { User } from '../core/User';
 
 @Injectable()
 export class UsersService {
@@ -33,8 +34,8 @@ export class UsersService {
     return storedUser ? JSON.parse(storedUser).token : null;
   }
 
-  loggedUser(): User {
+  loggedUser(): LoggedUser {
     let storedUser = localStorage.getItem('currentUser');
-    return storedUser ? JSON.parse(storedUser).user : null;
+    return storedUser ? JSON.parse(storedUser) : null;
   }
 }

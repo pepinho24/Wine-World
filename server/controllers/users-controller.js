@@ -5,15 +5,15 @@ module.exports = function(db) {
         AUTH_KEY_CHARS = "qwertyuiopasdfghjklzxcvbnmWERTYUIOPASDFGHJKLZXCVBNM";
 
     function generateAuthKey(uniquePart) {
-        let authKey = uniquePart,
+        let token = uniquePart,
             index;
 
-        while (authKey.length < AUTH_KEY_LENGTH) {
+        while (token.length < AUTH_KEY_LENGTH) {
             index = Math.floor(Math.random() * AUTH_KEY_CHARS.length);
-            authKey += AUTH_KEY_CHARS[index];
+            token += AUTH_KEY_CHARS[index];
         }
 
-        return authKey;
+        return token;
     }
 
     function get(req, res) {
@@ -72,15 +72,15 @@ module.exports = function(db) {
                 .send("Invalid username or password");
         }
 
-        if (!user.authKey) {
-            user.authKey = generateAuthKey(user.id);
+        if (!user.token) {
+            user.token = generateAuthKey(user.id);
             db.save();
         }
 
         return res.send({
             result: {
                 username: user.username,
-                authKey: user.authKey
+                token: user.token
             }
         });
     }

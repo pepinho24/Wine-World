@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Http, Headers } from '@angular/http';
+import { LoggedUser } from '../core/LoggedUser';
 
 @Injectable()
 export class AuthenticationService {
@@ -24,10 +25,10 @@ token: string;
         })
       })
       .map((res: any) => {
-        let user = res.json();
+        let user = res.json().result;
         this.token = user.token;
         localStorage.setItem('token', this.token);
-        localStorage.setItem('currentUser', user);
+        localStorage.setItem('currentUser', JSON.stringify(user));
       });
 
     // if (username === 'test' && password === 'test') {

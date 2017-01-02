@@ -22,7 +22,6 @@ import { AuthenticationService } from './services/authentication.service';
 
 import { ArticlesServiceService } from './services/articles.service';
 import { TruncatePipe } from './pipes/truncate.pipe';
-import { Authentication } from './services/authentication';
 
 
 @NgModule({
@@ -35,7 +34,7 @@ import { Authentication } from './services/authentication';
     RegisterComponent,
     LoginComponent,
     ArticleDetailComponent,
-    TruncatePipe
+    TruncatePipe,
   ],
   imports: [
     BrowserModule,

@@ -15,11 +15,11 @@
           <li><a [routerLink]="['articles']">Articles</a></li>
           <li><a [routerLink]="['about']">About</a></li>
         </ul>
-        <ul *ngIf="isLoggedIn" class="nav navbar-nav navbar-right">
-          <li>Hello, {{ username }}</li>
+        <ul *ngIf="existingUser" class="nav navbar-nav navbar-right">
+          <li>Hello, {{ this.existingUser.username }}</li>
           <li><a (click)="onLogout()">Logout</a></li>
         </ul>
-        <ul *ngIf="!isLoggedIn" class="nav navbar-nav navbar-right">
+        <ul *ngIf="!existingUser" class="nav navbar-nav navbar-right">
           <li><a [routerLink]="['register']">Register</a></li>
           <li><a [routerLink]="['login']"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
         </ul>
