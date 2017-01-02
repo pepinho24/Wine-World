@@ -14,10 +14,16 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
+<<<<<<< HEAD
 import { ArticlesServiceService } from './services/articles-service.service';
 import { TruncatePipe } from './core/truncate.pipe';
 import { UsersService } from './services/users.service';
 import { AuthenticationService } from './services/authentication.service';
+=======
+import { ArticlesServiceService } from './services/articles.service';
+import { TruncatePipe } from './pipes/truncate.pipe';
+import { Authentication } from './services/authentication';
+>>>>>>> b1f39c24c8a4dc30783af47f567e17bd3942d04b
 
 @NgModule({
   declarations: [
