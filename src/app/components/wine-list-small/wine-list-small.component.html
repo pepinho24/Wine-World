@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row" *ngFor="let w of wine">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <img src="{{'/images/' + w.image}}" alt="{{w.name}}">
+          <div class="caption">
+            <h4>{{w.name}}</h4>
+            <h5>{{w.type}}</h5>
+            <p>{{w.description | truncate: [100]}}</p>
+            <a [routerLink]="[login]" class="btn btn-success" role="button">Buy Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

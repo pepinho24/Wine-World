@@ -1,12 +1,13 @@
 {
-  "users": [   
+  "users": [
     {
       "username": "working",
       "password": "asdasd",
       "confirmPassword": "asdasd",
       "usernameToLower": "working",
       "id": "64485282-4168-4461-8a1c-126421930f1a",
-      "token": "64485282-4168-4461-8a1c-126421930f1aCNtZHHuTbEdAdWtkFJmOPRDZ"
+      "token": "64485282-4168-4461-8a1c-126421930f1aCNtZHHuTbEdAdWtkFJmOPRDZ",
+      "level": 30
     },
     {
       "username": "qweqwe",
@@ -14,21 +15,24 @@
       "confirmPassword": "qweqwe",
       "usernameToLower": "qweqwe",
       "id": "ab610edb-4cc8-4b64-9ca2-af420a3d97c6",
-      "token": "ab610edb-4cc8-4b64-9ca2-af420a3d97c6SeAZqzSbKBbUkWEmOVBnoHrt"
+      "token": "ab610edb-4cc8-4b64-9ca2-af420a3d97c6SeAZqzSbKBbUkWEmOVBnoHrt",
+      "level": 10
     },
     {
       "username": "zxczxc",
       "password": "zxczxc",
       "confirmPassword": "zxczxc",
       "usernameToLower": "zxczxc",
-      "id": "1ad2f699-78c9-417d-8aa2-166708d5631d"
+      "id": "1ad2f699-78c9-417d-8aa2-166708d5631d",
+      "level": 10
     },
     {
       "username": "fghfgh",
       "password": "fghfgh",
       "confirmPassword": "fghfgh",
       "usernameToLower": "fghfgh",
-      "id": "d2e8275e-0e44-4c08-b99d-2b9a2a59af70"
+      "id": "d2e8275e-0e44-4c08-b99d-2b9a2a59af70",
+      "level": 10
     },
     {
       "username": "sdfsdf",
@@ -36,7 +40,8 @@
       "confirmPassword": "sdfsdf",
       "usernameToLower": "sdfsdf",
       "id": "3b4918bf-be9a-462a-a4c0-bf69fc78a731",
-      "token": "3b4918bf-be9a-462a-a4c0-bf69fc78a731xsiLqwjCpvqjmPPbZBMUHnuz"
+      "token": "3b4918bf-be9a-462a-a4c0-bf69fc78a731xsiLqwjCpvqjmPPbZBMUHnuz",
+      "level": 20
     },
     {
       "username": "aaaasd",
@@ -44,7 +49,8 @@
       "confirmPassword": "asdasd",
       "usernameToLower": "aaaasd",
       "id": "f571faa7-af14-4079-8b79-38cc647346bd",
-      "token": "f571faa7-af14-4079-8b79-38cc647346bdjgLxzxMeBeajtBneVLGdWVjN"
+      "token": "f571faa7-af14-4079-8b79-38cc647346bdjgLxzxMeBeajtBneVLGdWVjN",
+      "level": 20
     },
     {
       "username": "qqqwww",
@@ -52,7 +58,8 @@
       "confirmPassword": "qqqwww",
       "usernameToLower": "qqqwww",
       "id": "b8c4edd0-a26c-4f4c-bb80-9d6264e43e0a",
-      "token": "b8c4edd0-a26c-4f4c-bb80-9d6264e43e0amaignfkkEGVAqVGtOghjLoJB"
+      "token": "b8c4edd0-a26c-4f4c-bb80-9d6264e43e0amaignfkkEGVAqVGtOghjLoJB",
+      "level": 10
     },
     {
       "username": "qweqweqwe",
@@ -60,7 +67,8 @@
       "confirmPassword": "qweqweqwe",
       "usernameToLower": "qweqweqwe",
       "id": "873f42ce-6dd3-402f-85c6-270668aa3e36",
-      "token": "873f42ce-6dd3-402f-85c6-270668aa3e36NVeCxXRtLcWxBOPMRfRanhNB"
+      "token": "873f42ce-6dd3-402f-85c6-270668aa3e36NVeCxXRtLcWxBOPMRfRanhNB",
+      "level": 10
     }
   ],
   "cookies": [
@@ -132,6 +140,53 @@
       "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
       "shareDate": "2016-09-26T18:35:03.006Z",
       "id": "6f12561e-e5e5-4918-877c-7e938c127850"
+    }
+  ],
+  "wine": [
+    {
+      "name": "test wine",
+      "type": "red",
+      "year": 2000,
+      "origin": "California, US",
+      "description": "test1",
+      "sweetness": 5,
+      "abv": 16,
+      "image": "wine1.jpg",
+      "price": {
+        "retail": 40,
+        "wholesale": 30
+      },
+      "wholesaleQuantity": 30
+    },
+    {
+      "name": "test wine2",
+      "type": "red",
+      "year": 1990,
+      "origin": "California, US",
+      "description": "test2",
+      "sweetness": 3,
+      "abv": 25,
+      "image": "wine2.jpg",
+      "price": {
+        "retail": 50,
+        "wholesale": 30
+      },
+      "wholesaleQuantity": 20
+    },
+    {
+      "name": "test wine 3",
+      "type": "red1",
+      "year": 2005,
+      "origin": "California, US",
+      "description": "test3",
+      "sweetness": 3,
+      "abv": 20,
+      "image": "wine3.jpg",
+      "price": {
+        "retail": 35,
+        "wholesale": 20
+      },
+      "wholesaleQuantity": 40
     }
   ]
 }

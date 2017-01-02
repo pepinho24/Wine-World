@@ -15,6 +15,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
+import { WineListSmallComponent } from './components/wine-list-small/wine-list-small.component';
+import { WineListComponent } from './components/wine-list/wine-list.component';
+import { WineDetailComponent } from './components/wine-detail/wine-detail.component';
 
 import { UsersService } from './services/users.service';
 import { AuthenticationService } from './services/authentication.service';
@@ -34,7 +37,10 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     LoginComponent,
     ArticleDetailComponent,
     TruncatePipe,
-    FooterComponent
+    FooterComponent,
+    WineListSmallComponent,
+    WineListComponent,
+    WineDetailComponent
   ],
   imports: [
     BrowserModule,
