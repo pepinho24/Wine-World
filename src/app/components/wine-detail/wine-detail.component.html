@@ -1,3 +1,42 @@
-<div class="container-fluid">
-    hello!
+<div class="container-fluid" *ngIf="wine">
+    <div class="row"><h2>{{wine.name}}</h2></div>
+    <div class="row">
+        <div class="col-md-5">
+            <img src="{{'http://localhost:3000/images/' + wine.image}}" alt="{{wine.name}}">
+        </div>
+        <div class="col-md-7">
+            <table class="table">
+                <tr>
+                    <td>Type:</td><td>{{wine.type}}</td>
+                </tr>
+                <tr>
+                    <td>Year:</td><td>{{wine.year}}</td>
+                </tr>
+                <tr>
+                    <td>Country of origin:</td><td>{{wine.origin}}</td>
+                </tr>
+                <tr>
+                    <td>Sweetness:</td><td>{{wine.sweetness}}</td>
+                </tr>
+                <tr>
+                    <td>Alchohol by volume:</td><td>{{wine.abv}}</td>
+                </tr>
+                <tr *ngIf="wine.price && wine.price.retail">
+                    <td>Retail price:</td><td>{{wine.price.retail}}</td>
+                </tr>
+                <tr *ngIf="wine.price && wine.price.wholesale">
+                    <td>Wholesale price:</td><td>{{wine.price.wholesale}}</td>
+                </tr>
+                <tr *ngIf="wine.wholesaleQuantity">
+                    <td>Wholesale required quantity:</td><td>{{wine.wholesaleQuantity}}</td>
+                </tr>
+            </table>
+            <p>{{wine.description}}</p>
+            <a [routerLink]="['wine', wine.getURIEncodedName()]"
+                class="btn btn-success" role="button">Buy Now!</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" *ngIf="!wine">
+    Requested wine was not found.
 </div>

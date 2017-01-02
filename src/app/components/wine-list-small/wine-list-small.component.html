@@ -2,17 +2,19 @@
     <strong>{{title}}</strong>
     <div class="row">
       <div class="col-md-3" *ngFor="let w of wine">
-        <div class="thumbnail">
-          <img src="{{'http://localhost:3000/images/' + w.image}}" alt="{{w.name}}">
-          <div class="caption">
-            <h4>{{w.name | truncate: [20]}}</h4>
-            <strong>{{w.type}}, {{w.year}}</strong>
-            <p>{{w.origin}}</p>
-            <a [routerLink]="[login]" class="btn btn-success" role="button">Buy Now!</a>
+        <a [routerLink]="['wine', w.getURIEncodedName()]">
+          <div class="thumbnail">
+            <img src="{{'http://localhost:3000/images/' + w.image}}" alt="{{w.name}}">
+            <div class="caption">
+              <h4>{{w.name | truncate: [20]}}</h4>
+              <strong>{{w.type}}, {{w.year}}</strong>
+              <p>{{w.origin}}</p>
+              <a [routerLink]="['wine', w.getURIEncodedName()]" class="btn btn-success" role="button">Buy Now!</a>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
-  <div><a [routerLink]="['']">See more...</a></div>
+  <div><a [routerLink]="['wine']">See more...</a></div>
   <hr/>
 </div>

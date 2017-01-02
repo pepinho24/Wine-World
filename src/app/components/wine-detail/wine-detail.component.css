@@ -1,0 +1,11 @@
+.container-fluid {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 400px;
+}
+
+.table td:first-child {
+    font-weight: 600;
+}
