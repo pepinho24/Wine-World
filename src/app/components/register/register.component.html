@@ -1,57 +1,32 @@
 <div class="jumbotron">
-    <h2>Register Form</h2>
-    <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
-      <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['username'].valid && complexForm.controls['username'].touched}">
-        <label>Username:</label>
-        <input class="form-control" type="text" placeholder="John" [formControl]="complexForm.controls['username']">
-        <!-- The hasError method will tell us if a particular error exists -->
-        <div *ngIf="complexForm.controls['username'].hasError('required') && complexForm.controls['username'].touched" class="alert alert-danger">You must include a username.</div>
-        <div *ngIf="complexForm.controls['username'].hasError('minlength') && complexForm.controls['username'].touched" class="alert alert-danger">Password must be at least 5 characters long.</div>   
-        <div *ngIf="complexForm.controls['username'].hasError('maxlength') && complexForm.controls['username'].touched" class="alert alert-danger">Your username cannot exceed 30 characters.</div>
-      </div>
-      <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['password'].valid && complexForm.controls['password'].touched}">
-        <label>Password</label>
-        <input class="form-control" type="password"  [formControl]="complexForm.controls['password']">
-        <!-- The hasError method can work with the built in validators but custom validators as well -->
-        <div *ngIf="complexForm.controls['password'].hasError('required') && complexForm.controls['password'].touched" class="alert alert-danger">You must include a password.</div>
-        <div *ngIf="complexForm.controls['password'].hasError('minlength') && complexForm.controls['password'].touched" class="alert alert-danger">Password must be at least 5 characters long.</div>        
-      </div>
-      <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['confirmPassword'].valid && complexForm.controls['confirmPassword'].touched}">
-        <label>Confirm Password</label>
-        <input class="form-control" type="password" [formControl]="complexForm.controls['confirmPassword']" validateEqual="password">
-        <!-- The hasError method can work with the built in validators but custom validators as well -->
-        <div *ngIf="complexForm.controls['confirmPassword'].hasError('required') && complexForm.controls['confirmPassword'].touched" class="alert alert-danger">You must include a confirm password.</div>        
-      </div>
-      <!--<div class="form-group">
-        <label>Gender</label>
-        <div class="alert alert-danger" *ngIf="!complexForm.controls['gender'].valid && complexForm.controls['gender'].touched">You must select a gender.</div>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="gender" value="Male" [formControl]="complexForm.controls['gender']">
-          Male
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="gender" value="Female" [formControl]="complexForm.controls['gender']">
-          Female
-        </label>
-      </div>
-      <div class="form-group">
-        <label>Activities</label>
-      </div>
-      <label class="checkbox-inline">
-        <input type="checkbox" value="hiking" name="hiking" [formControl]="complexForm.controls['hiking']"> Hiking
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" value="swimming" name="swimming" [formControl]="complexForm.controls['swimming']"> Swimming
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" value="running" name="running" [formControl]="complexForm.controls['running']"> Running
-      </label>-->
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary" [disabled]="!complexForm.valid">Submit</button>
-      </div>
-    </form>
-  </div>
+  <h2>Register Form</h2>
+  <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+    <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['username'].valid && complexForm.controls['username'].touched}">
+      <label>Username:</label>
+      <input class="form-control" type="text" placeholder="John" [formControl]="complexForm.controls['username']">
+      <!-- The hasError method will tell us if a particular error exists -->
+      <div *ngIf="complexForm.controls['username'].hasError('required') && complexForm.controls['username'].touched" class="alert alert-danger">You must include a username.</div>
+      <div *ngIf="complexForm.controls['username'].hasError('minlength') && complexForm.controls['username'].touched" class="alert alert-danger">Password must be at least 5 characters long.</div>
+      <div *ngIf="complexForm.controls['username'].hasError('maxlength') && complexForm.controls['username'].touched" class="alert alert-danger">Your username cannot exceed 30 characters.</div>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['password'].valid && complexForm.controls['password'].touched}">
+      <label>Password</label>
+      <input class="form-control" type="password" [formControl]="complexForm.controls['password']">
+      <!-- The hasError method can work with the built in validators but custom validators as well -->
+      <div *ngIf="complexForm.controls['password'].hasError('required') && complexForm.controls['password'].touched" class="alert alert-danger">You must include a password.</div>
+      <div *ngIf="complexForm.controls['password'].hasError('minlength') && complexForm.controls['password'].touched" class="alert alert-danger">Password must be at least 5 characters long.</div>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['confirmPassword'].valid && complexForm.controls['confirmPassword'].touched}">
+      <label>Confirm Password</label>
+      <input class="form-control" type="password" [formControl]="complexForm.controls['confirmPassword']" validateEqual="password">
+      <!-- The hasError method can work with the built in validators but custom validators as well -->
+      <div *ngIf="complexForm.controls['confirmPassword'].hasError('required') && complexForm.controls['confirmPassword'].touched"
+        class="alert alert-danger">You must include a confirm password.</div>
+      <div *ngIf="complexForm.controls['confirmPassword'].hasError('minlength') && complexForm.controls['confirmPassword'].touched" class="alert alert-danger">Password must be at least 5 characters long.</div>
+
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary" [disabled]="!complexForm.valid">Submit</button>
+    </div>
+  </form>
+</div>

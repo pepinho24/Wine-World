@@ -29,7 +29,7 @@ export class ArticleDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params
       // (+) converts string 'id' to a number
-      .switchMap((params: Params) => this.service.getArticle(+params['id']))
+      .switchMap((params: Params) => this.service.getArticle(params['id']))
       .subscribe((a: Article) => {
         this.article = a;
         console.log(this.article);
