@@ -6,7 +6,7 @@ const _ = require("lodash");
 module.exports = function (db) {
     function get(req, res) {
         let articles = _.chain(db("articles"))
-            .sortBy(article => article.CreatedOn);
+            .sortBy(article => -article.CreatedOn);
 
         res.send({
             result: articles
@@ -20,7 +20,6 @@ module.exports = function (db) {
             ArticleId: articleId
         });
 
-        console.log(article);
         if (!article) {
             return res.status(404)
                 .send("Invalid article ID");

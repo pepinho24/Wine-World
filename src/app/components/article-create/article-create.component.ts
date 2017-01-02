@@ -14,13 +14,12 @@ export class ArticleCreateComponent implements OnInit {
 
 constructor(fb: FormBuilder, private articles: ArticlesServiceService, private router: Router, private auth: AuthenticationService) {
     this.complexForm = fb.group({
-      'title': [null, Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(30)])],
+      'title': [null, Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(150)])],
       'content': [null, Validators.compose([Validators.required, Validators.minLength(5)])]
     });
   }
 
   submitForm(value) {
-    // check if password and confirmPassword match
     this.articles.createArticle(value.title, value.content)
       .subscribe(
       (article: any) => {

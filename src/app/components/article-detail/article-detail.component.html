@@ -1,9 +1,11 @@
-<div *ngIf="article">
-  <h1>
-   {{ article.Title }}
-  </h1>
-  <p>{{article.Content}}</p>
+<div *ngIf="article" class='container jumbotron'>
+  <h1>{{ article.Title }}</h1>
+  <hr>
+  <p class="lead">Posted on <em>{{ article.CreatedOn | date : 'medium'}}</em> by <strong> {{ article.Author }}</strong>
+  </p>
+  <hr>
+  <p [innerHtml]='article.Content'></p>
 </div>
 <p>
-  <button (click)="goToArticles()">Go back to All articles</button>
+  <button class='btn btn-primary' (click)="goToArticles()">Go back to All articles</button>
 </p>

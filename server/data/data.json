@@ -1,65 +1,22 @@
 {
   "users": [
     {
-      "username": "working",
-      "password": "asdasd",
-      "confirmPassword": "asdasd",
-      "usernameToLower": "working",
+      "username": "admin",
+      "password": "admin",
+      "confirmPassword": "admin",
+      "usernameToLower": "admin",
       "id": "64485282-4168-4461-8a1c-126421930f1a",
       "token": "64485282-4168-4461-8a1c-126421930f1aCNtZHHuTbEdAdWtkFJmOPRDZ",
       "level": 30
     },
     {
-      "username": "qweqwe",
-      "password": "qweqwe",
-      "confirmPassword": "qweqwe",
-      "usernameToLower": "qweqwe",
-      "id": "ab610edb-4cc8-4b64-9ca2-af420a3d97c6",
-      "token": "ab610edb-4cc8-4b64-9ca2-af420a3d97c6SeAZqzSbKBbUkWEmOVBnoHrt",
-      "level": 10
-    },
-    {
-      "username": "zxczxc",
-      "password": "zxczxc",
-      "confirmPassword": "zxczxc",
-      "usernameToLower": "zxczxc",
-      "id": "1ad2f699-78c9-417d-8aa2-166708d5631d",
-      "level": 10
-    },
-    {
-      "username": "fghfgh",
-      "password": "fghfgh",
-      "confirmPassword": "fghfgh",
-      "usernameToLower": "fghfgh",
-      "id": "d2e8275e-0e44-4c08-b99d-2b9a2a59af70",
-      "level": 10
-    },
-    {
-      "username": "sdfsdf",
-      "password": "sdfsdf",
-      "confirmPassword": "sdfsdf",
-      "usernameToLower": "sdfsdf",
+      "username": "wholesale",
+      "password": "wholesale",
+      "confirmPassword": "wholesale",
+      "usernameToLower": "wholesale",
       "id": "3b4918bf-be9a-462a-a4c0-bf69fc78a731",
       "token": "3b4918bf-be9a-462a-a4c0-bf69fc78a731xsiLqwjCpvqjmPPbZBMUHnuz",
       "level": 20
-    },
-    {
-      "username": "aaaasd",
-      "password": "asdasd",
-      "confirmPassword": "asdasd",
-      "usernameToLower": "aaaasd",
-      "id": "f571faa7-af14-4079-8b79-38cc647346bd",
-      "token": "f571faa7-af14-4079-8b79-38cc647346bdjgLxzxMeBeajtBneVLGdWVjN",
-      "level": 20
-    },
-    {
-      "username": "qqqwww",
-      "password": "qqqwww",
-      "confirmPassword": "qqqwww",
-      "usernameToLower": "qqqwww",
-      "id": "b8c4edd0-a26c-4f4c-bb80-9d6264e43e0a",
-      "token": "b8c4edd0-a26c-4f4c-bb80-9d6264e43e0amaignfkkEGVAqVGtOghjLoJB",
-      "level": 10
     },
     {
       "username": "qweqweqwe",
@@ -76,7 +33,8 @@
       "confirmPassword": "asdasd",
       "usernameToLower": "asdasd",
       "id": "d4bb9889-e2e9-4df3-bf10-a98027ae88a5",
-      "token": "d4bb9889-e2e9-4df3-bf10-a98027ae88a5XxxHdPUuuuJOXuAlVoyZCRvu"
+      "token": "d4bb9889-e2e9-4df3-bf10-a98027ae88a5XxxHdPUuuuJOXuAlVoyZCRvu",
+      "level": 10
     }
   ],
   "articles": [
@@ -121,14 +79,6 @@
       "ArticleId": "6e0a0732-74ab-4216-9dbb-dbd3703cba1e"
     },
     {
-      "Title": "aasdasdasdsddas",
-      "CreatedOn": "2017-01-02T18:06:15.999Z",
-      "Author": "asdasd",
-      "Content": "asddasdassadasddsa",
-      "id": "b2fad1ce-b383-484d-82f4-7d967afa6635",
-      "ArticleId": "b2fad1ce-b383-484d-82f4-7d967afa6635"
-    },
-    {
       "Title": "Final test",
       "CreatedOn": "2017-01-02T18:17:43.624Z",
       "Author": "asdasd",
@@ -145,20 +95,28 @@
       "ArticleId": "5b8fdaea-385b-46a9-be9d-191424628148"
     },
     {
-      "Title": "AAAsadasdsa",
-      "CreatedOn": "2017-01-02T18:27:41.812Z",
-      "Author": "asdasd",
-      "Content": "AAAasddasds",
-      "id": "e83ce202-1ba9-4dc8-b53e-9eb1d9a5eb4a",
-      "ArticleId": "e83ce202-1ba9-4dc8-b53e-9eb1d9a5eb4a"
-    },
-    {
       "Title": "Dolore quaeque sit ? Eu dunt. ",
       "CreatedOn": "2017-01-02T18:30:14.633Z",
       "Author": "asdasd",
       "Content": "Cu tamquam epicuri efficiendi vix, sit prima altera timeam id! Dolores hendrerit ut sea, ipsum commodo ne mei? Mutat everti vis ex, ea eum aeterno eligendi sententiae, at quodsi tibique mel. Illud justo utamur eum ex, has ea erant probatus! Eirmod tritani usu an, denique persecuti sea ad, mea ne wisi inimicus!  Illud euismod tincidunt te pri? Ea has eius commune nominavi. Et ridens reprimique cum, mel odio aeterno epicurei ea. Wisi fuisset mel in, te est soleat oporteat dissentias. Pri solet epicurei ea, ius an virtute incorrupte consectetuer.  Dolore quaeque ut has, sit alii labitur et? Eu usu homero invidunt. Ei animal maluisset pri, quo ad essent mandamus signiferumque? Cum no volutpat urbanitas, eam et invidunt iudicabit adversarium.  Et nam error aeterno facilisi, ut congue torquatos pro! Te mei tota ignota? No liber vivendo has? Brute nulla in qui. Ea labore prompta est, sale essent persecuti sea no. Dicta voluptua delicatissimi quo et. Qui dolores blandit no.  Corrumpit interesset duo cu. Labitur vivendum eu mei. Minim verear delicatissimi mei et, no admodum reprimique his. Vel wisi molestiae eu, noster phaedrum moderatius quo ex?",
       "id": "0d9778cd-c404-4a10-b644-a59be2658b2f",
       "ArticleId": "0d9778cd-c404-4a10-b644-a59be2658b2f"
+    },
+    {
+      "Title": "The best 10 wines for 2016",
+      "CreatedOn": "2017-01-02T20:50:03.887Z",
+      "Author": "asdasd",
+      "Content": "Here at WineWorld we drank a lot of really great wine in 2016. Still, some bottles truly stood out, and you’ll find the list of these below.\n\nEach wine on this list possesses one crucial quality: immediate drinkability. These wines are approachable, interesting, and, despite one or two exceptions where aging would help, ready to be popped and poured. That’s not to say most of the bottles can’t be aged; they can, and if you have the space and time, they should, but we recognize most people are looking for that great bottle to buy and drink on the same day. All of these bottles deliver that and more.\n\nHere are the top 10 wines of 2016 according to the WineWorld staff:\n\n1. BOSCARELLI VINO NOBILE DI MONTEPULCIANO 2013, $34\nThe Top 50 Wines of 2016\nThis wine is truly mind-blowing, and a prime example that Brunello is not the only Tuscan DOCG producing outstanding Sangiovese. In fact, this wine has us wondering whether Montepulciano might be the best place in Tuscany for the grape’s cultivation. Made by a boutique family producer, this wine is a beautiful balance of fruit and earth, with bright cherries equalized by tobacco and leather. What we find truly amazing about this wine is that it is not only drinking beautifully now, but it’s also a bottle that could be saved for years and it will only get better.\n\n2. LE CIGARE VOLANT RÉSERVE 2012, $69\nThe Top 50 Wines of 2016\nRandall Grahm is a winemaker who continues to impress. His move to close all of his wines with screwcap might be seen by some people as cheapening the wines, but that couldn’t be further from the truth. This is a serious, age-worthy red wine that showcases why Randall is one of this country’s best winemakers. A Rhone-style red blend, the wine is deep and dark with the Syrah playing the dominant role. Flavors of dark berries marry with leather to create a delicious wine.\n\n3. TABARRINI CAMPO ALLA CERQUA SAGRANTINO 2010, $50\ntabarrini\nIt’s a rare occurrence to find a wine and winemaker both as exciting as Tabbarini. While Sagrantino may not be a grape that delivers immediately, once it’s aged it can be one of the greatest wines in the world. This bottle is the best example coming out of Montefalco. Ageable for decades, this is a wine that is worth purchasing and holding on to; a fantastic investment.\n\n4. VIÑA REAL RESERVA 2010, $30\nThe Top 50 Wines of 2016\nGood Rioja is one of the greatest bangs for your buck in the wine world. This reserva from one of the region’s top producers doesn’t disappoint. The wine pours a beautiful ruby color with aromas of red cherries, vanilla, and leather. There are flavors of dark red fruit, with nice acidity and balanced tannins.\n\n5. COS CONTRADA 2009, $85\nThe Top 50 Wines of 2016\nThis is what opulence tastes like. This is the purest expression of Nero d’Avola we have ever encountered. One sip and you’ll see why so many people think this little grape from Sicily really could be the next big thing in the wine world. It’s a truly elegant wine.\n\n6. GUY BRETON MORGON “VIEILLES VIGNES” 2014, $31\nThe Top 50 Wines of 2016\nThis bright and fruit-forward wine is a delicious example of what Gamay from Beaujolais should be. Guy Breton farms all of his vineyards organically, with only indigenous yeasts used during fermentation. The Gamay is carbonically macerated and aged on its lees, leading way to a layered palate of bright red fruit.\n\n7. MULLAN ROAD CELLARS RED BLEND 2013, $44\nThe Top 50 Wines of 2016\nThis Columbia Valley red blend is a stellar example of what Bordeaux blends from Washington State can do. The assemblage of 57% Cabernet Sauvignon, 34% Merlot, 8% Cabernet Franc, and a mere 1% Malbec creates a full-bodied yet utterly smooth wine, bursting with flavors of ripe blackberries and figs. Well-integrated tannins leave the wine feeling silky on the palate, with an ageing potential of up to 10 years.\n\n8. GRAHAM’S 10 YEAR TAWNY PORT, $33\nThe Top 50 Wines of 2016\nThere’s no better wine for a cold or rainy night than Graham’s 10 Year Tawny Port. The wine is a blend of both older and younger wines, with an average age of 10 years. Older wines bring complex, layered flavors of caramel to the blend, while the younger wines bring bright fruit and zesty acidity to the mix. The result is a copper-colored wine full of nutty caramel flavors, rich and gentle on the palate, with a lasting finish.\n\n9. A PORTELA MENCIA 2013, $15\nThe Top 50 Wines of 2016\nIndigenous to northwestern Spain, the Mencia grape thrives in the granite and slate soils of Galicia, specifically in the Bierzo and Valdeorras regions. A Portela Mencia comes from high-elevation vines, all tended organically, producing a bright wine with meaty yet fruit-forward characteristics. Cold soaking prior to fermentation followed by ageing in stainless steel produces this bold yet easy drinking wine that remains authentic to the true characteristics of the Mencia grape.\n\n10. JIM CLENDENEN NEBBIOLO – THE PIP 2011, $30\nThe Top 50 Wines of 2016\nYes, this is a Nebbiolo from California, and yes, you are going to love it. Made by Jim Clendenen, a winemaker who has become known for outstanding Pinot Noir under the Au Bon Climat label, this Nebbiolo has flown a bit under the radar. We think it may be one of the best wines he makes. It’s also typical of Nebbiolo; you’ll find aromas of roses and cherries, with deep dark fruit, bright acidity, and tannins on the palate.",
+      "id": "cf8d3013-0ed0-468d-a595-ac6fecb15b1a",
+      "ArticleId": "cf8d3013-0ed0-468d-a595-ac6fecb15b1a"
+    },
+    {
+      "Title": "The best 10 wines for 2016",
+      "CreatedOn": "2017-01-02T21:05:27.348Z",
+      "Author": "asdasd",
+      "Content": "<p>Here at <strong>WineWorld</strong> we drank a lot of really great wine in 2016. Still, some bottles truly stood out, and you&rsquo;ll find the list of these below.</p>\n<p>Each wine on this list possesses one crucial quality: immediate drinkability. These wines are approachable, interesting, and, despite one or two exceptions where aging would help, ready to be popped and poured. That&rsquo;s not to say most of the bottles can&rsquo;t be aged; they can, and if you have the space and time, they should, but we recognize most people are looking for that great bottle to buy and drink on the same day. All of these bottles deliver that and more.</p>\n<p>Here are the top 10 wines of 2016 according to the <strong>WineWorld</strong> staff:</p>\n<p><strong>1. BOSCARELLI VINO NOBILE DI MONTEPULCIANO 2013, $34</strong><br />The Top 50 Wines of 2016<br />This wine is truly mind-blowing, and a prime example that Brunello is not the only Tuscan DOCG producing outstanding Sangiovese. In fact, this wine has us wondering whether Montepulciano might be the best place in Tuscany for the grape&rsquo;s cultivation. Made by a boutique family producer, this wine is a beautiful balance of fruit and earth, with bright cherries equalized by tobacco and leather. What we find truly amazing about this wine is that it is not only drinking beautifully now, but it&rsquo;s also a bottle that could be saved for years and it will only get better.</p>\n<p><strong>2. LE CIGARE VOLANT R&Eacute;SERVE 2012, $69</strong><br />The Top 50 Wines of 2016<br />Randall Grahm is a winemaker who continues to impress. His move to close all of his wines with screwcap might be seen by some people as cheapening the wines, but that couldn&rsquo;t be further from the truth. This is a serious, age-worthy red wine that showcases why Randall is one of this country&rsquo;s best winemakers. A Rhone-style red blend, the wine is deep and dark with the Syrah playing the dominant role. Flavors of dark berries marry with leather to create a delicious wine.</p>\n<p><strong>3. TABARRINI CAMPO ALLA CERQUA SAGRANTINO 2010, $50</strong><br />tabarrini<br />It&rsquo;s a rare occurrence to find a wine and winemaker both as exciting as Tabbarini. While Sagrantino may not be a grape that delivers immediately, once it&rsquo;s aged it can be one of the greatest wines in the world. This bottle is the best example coming out of Montefalco. Ageable for decades, this is a wine that is worth purchasing and holding on to; a fantastic investment.</p>\n<p><strong>4. VI&Ntilde;A REAL RESERVA 2010, $30</strong><br />The Top 50 Wines of 2016<br />Good Rioja is one of the greatest bangs for your buck in the wine world. This reserva from one of the region&rsquo;s top producers doesn&rsquo;t disappoint. The wine pours a beautiful ruby color with aromas of red cherries, vanilla, and leather. There are flavors of dark red fruit, with nice acidity and balanced tannins.</p>\n<p><strong>5. COS CONTRADA 2009, $85</strong><br />The Top 50 Wines of 2016<br />This is what opulence tastes like. This is the purest expression of Nero d&rsquo;Avola we have ever encountered. One sip and you&rsquo;ll see why so many people think this little grape from Sicily really could be the next big thing in the wine world. It&rsquo;s a truly elegant wine.</p>\n<p><strong>6. GUY BRETON MORGON &ldquo;VIEILLES VIGNES&rdquo; 2014, $31</strong><br />The Top 50 Wines of 2016<br />This bright and fruit-forward wine is a delicious example of what Gamay from Beaujolais should be. Guy Breton farms all of his vineyards organically, with only indigenous yeasts used during fermentation. The Gamay is carbonically macerated and aged on its lees, leading way to a layered palate of bright red fruit.</p>\n<p><strong>7. MULLAN ROAD CELLARS RED BLEND 2013, $44</strong><br />The Top 50 Wines of 2016<br />This Columbia Valley red blend is a stellar example of what Bordeaux blends from Washington State can do. The assemblage of 57% Cabernet Sauvignon, 34% Merlot, 8% Cabernet Franc, and a mere 1% Malbec creates a full-bodied yet utterly smooth wine, bursting with flavors of ripe blackberries and figs. Well-integrated tannins leave the wine feeling silky on the palate, with an ageing potential of up to 10 years.</p>\n<p><strong>8. GRAHAM&rsquo;S 10 YEAR TAWNY PORT, $33</strong><br />The Top 50 Wines of 2016<br />There&rsquo;s no better wine for a cold or rainy night than Graham&rsquo;s 10 Year Tawny Port. The wine is a blend of both older and younger wines, with an average age of 10 years. Older wines bring complex, layered flavors of caramel to the blend, while the younger wines bring bright fruit and zesty acidity to the mix. The result is a copper-colored wine full of nutty caramel flavors, rich and gentle on the palate, with a lasting finish.</p>\n<p><strong>9. A PORTELA MENCIA 2013, $15</strong><br />The Top 50 Wines of 2016<br />Indigenous to northwestern Spain, the Mencia grape thrives in the granite and slate soils of Galicia, specifically in the Bierzo and Valdeorras regions. A Portela Mencia comes from high-elevation vines, all tended organically, producing a bright wine with meaty yet fruit-forward characteristics. Cold soaking prior to fermentation followed by ageing in stainless steel produces this bold yet easy drinking wine that remains authentic to the true characteristics of the Mencia grape.</p>\n<p><strong>10. JIM CLENDENEN NEBBIOLO &ndash; THE PIP 2011, $30</strong><br />The Top 50 Wines of 2016<br />Yes, this is a Nebbiolo from California, and yes, you are going to love it. Made by Jim Clendenen, a winemaker who has become known for outstanding Pinot Noir under the Au Bon Climat label, this Nebbiolo has flown a bit under the radar. We think it may be one of the best wines he makes. It&rsquo;s also typical of Nebbiolo; you&rsquo;ll find aromas of roses and cherries, with deep dark fruit, bright acidity, and tannins on the palate.</p>",
+      "id": "66457f99-c8da-484b-85ff-96f7ec8241c1",
+      "ArticleId": "66457f99-c8da-484b-85ff-96f7ec8241c1"
     }
   ],
   "cookies": [

@@ -5,6 +5,8 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import { ArticlesServiceService } from '../../services/articles.service';
 import { Article } from '../../models/Article';
+import { isLoggedin } from '../../services/is-loggedin';
+import { UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-articles-list',
@@ -14,9 +16,11 @@ import { Article } from '../../models/Article';
 
 export class ArticlesListComponent implements OnInit {
   articles: Observable<Article[]>;
+  isLoggedIn: boolean = !!this.users.loggedUser();
   constructor(private service: ArticlesServiceService,
     private route: ActivatedRoute,
-    private router: Router) {
+    private router: Router,
+    private users: UsersService) {
   }
 
   ngOnInit() {

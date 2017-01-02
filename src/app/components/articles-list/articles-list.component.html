@@ -1,6 +1,7 @@
 <h1>Here you could find some fun facts about your favorite wine</h1>
 
-<a class='btn btn-success' [routerLink]="['/articles', 'create']"><span class="glyphicon glyphicon-plus"></span>Create new article</a>
+<a *ngIf="isLoggedIn" class='btn btn-success' [routerLink]="['/articles', 'create']"><span class="glyphicon glyphicon-plus"></span>Create new article</a>
+<a *ngIf="!isLoggedIn" class='btn btn-success' [routerLink]="['/login']"><span class="glyphicon glyphicon-plus"></span>Login to create a new article.</a> 
 
 <div *ngFor='let article of articles | async' class="panel">
    <app-article-details-small [article]='article'></app-article-details-small>

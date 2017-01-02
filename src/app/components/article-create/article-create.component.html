@@ -1,6 +1,6 @@
 <h1>Create a new article</h1>
 <div class="jumbotron">
-  <h2>Register Form</h2>
+  <h2>Create a new wine related article</h2>
   <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
     <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['title'].valid && complexForm.controls['title'].touched}">
       <label>Title:</label>
@@ -12,7 +12,8 @@
     </div>
     <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['content'].valid && complexForm.controls['content'].touched}">
       <label>Article Content</label>
-      <input class="form-control" type="text" [formControl]="complexForm.controls['content']">
+      <!--<input class="form-control" type="text" [formControl]="complexForm.controls['content']">-->
+      <textarea class="form-control" rows="15" [formControl]="complexForm.controls['content']" ></textarea>
       <!-- The hasError method can work with the built in validators but custom validators as well -->
       <div *ngIf="complexForm.controls['content'].hasError('required') && complexForm.controls['content'].touched" class="alert alert-danger">You must include content.</div>
       <div *ngIf="complexForm.controls['content'].hasError('minlength') && complexForm.controls['content'].touched" class="alert alert-danger">content must be at least 5 characters long.</div>
