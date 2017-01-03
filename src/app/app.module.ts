@@ -32,7 +32,7 @@ import { ArticleDetailsSmallComponent } from './components/article-details-small
 import { ArticleCreateComponent } from './components/article-create/article-create.component';
 import { ThumbnailHoverDirective } from './directives/thumbnail-hover.directive';
 import { PurchaseResponseDirective } from './directives/purchase-response.directive';
-
+import { HoverArticleDirective } from './directives/hover-article.directive';
 @NgModule({
   imports: [
     BrowserModule,
@@ -60,8 +60,8 @@ import { PurchaseResponseDirective } from './directives/purchase-response.direct
     ArticleDetailsSmallComponent,
     ArticleCreateComponent,
     ThumbnailHoverDirective,
-    PurchaseResponseDirective
-  ],
+    PurchaseResponseDirective,
+    HoverArticleDirective  ],
   providers: [ArticlesServiceService, UsersService,  AuthenticationService, WineService],
   bootstrap: [AppComponent]
 })
