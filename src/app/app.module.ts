@@ -30,9 +30,9 @@ import { SearchArticlesPipe } from './pipes/search-articles.pipe';
 
 import { ArticleDetailsSmallComponent } from './components/article-details-small/article-details-small.component';
 import { ArticleCreateComponent } from './components/article-create/article-create.component';
+import { ThumbnailHoverDirective } from './directives/thumbnail-hover.directive';
+import { PurchaseResponseDirective } from './directives/purchase-response.directive';
 import { HoverArticleDirective } from './directives/hover-article.directive';
-
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -59,8 +59,9 @@ import { HoverArticleDirective } from './directives/hover-article.directive';
     WineDetailComponent,
     ArticleDetailsSmallComponent,
     ArticleCreateComponent,
-    HoverArticleDirective
-  ],
+    ThumbnailHoverDirective,
+    PurchaseResponseDirective,
+    HoverArticleDirective  ],
   providers: [ArticlesServiceService, UsersService,  AuthenticationService, WineService],
   bootstrap: [AppComponent]
 })
