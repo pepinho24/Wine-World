@@ -6,6 +6,8 @@ This is a team project for the Angular 2 SPA course at Telerik Academy.
 
 ##Demo
 
+<img src="./src/assets/demo.gif" alt="demo">
+
 ##Functionality
 You can find the project requirements [here](https://github.com/TelerikAcademy/Angular-2/tree/master/Course%20Project).
 
