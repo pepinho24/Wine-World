@@ -1,23 +1,25 @@
-<div class="panel-heading">
-  <div class="text-center">
-    <div class="row">
-      <div class="col-sm-9">
-        <h3 class="pull-left">{{ article.Title}}</h3>
-      </div>
-      <div class="col-sm-3">
-        <h4 class="pull-right">
-          <small><em>{{ article.CreatedOn | date : 'medium'}}</em></small>
-        </h4>
+<div appHoverArticle>
+  <div class="panel-heading">
+    <div class="text-center">
+      <div class="row">
+        <div class="col-sm-9">
+          <h3 class="pull-left">{{ article.Title}}</h3>
+        </div>
+        <div class="col-sm-3">
+          <h4 class="pull-right">
+            <small><em>{{ article.CreatedOn | date : 'medium'}}</em></small>
+          </h4>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="panel-body">
-  {{ article.Content | truncate: [200] }}<a [routerLink]="['/article', article.ArticleId]">Read more</a>
-</div>
+  <div class="panel-body">
+    {{ article.Content | truncate: [200] }}<a [routerLink]="['/article', article.ArticleId]">Read more</a>
+  </div>
 
-<div class="panel-footer">
-  <strong>Created by: </strong> <em>{{article.Author}}</em>
-  <!--<span class="label label-default">Welcome</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>-->
+  <div class="panel-footer">
+    <strong>Created by: </strong> <em>{{article.Author}}</em>
+    <!--<span class="label label-default">Welcome</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>-->
+  </div>
 </div>

@@ -30,6 +30,7 @@ import { SearchArticlesPipe } from './pipes/search-articles.pipe';
 
 import { ArticleDetailsSmallComponent } from './components/article-details-small/article-details-small.component';
 import { ArticleCreateComponent } from './components/article-create/article-create.component';
+import { HoverArticleDirective } from './directives/hover-article.directive';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { ArticleCreateComponent } from './components/article-create/article-crea
     WineListComponent,
     WineDetailComponent,
     ArticleDetailsSmallComponent,
-    ArticleCreateComponent
+    ArticleCreateComponent,
+    HoverArticleDirective
   ],
   providers: [ArticlesServiceService, UsersService,  AuthenticationService, WineService],
   bootstrap: [AppComponent]
