@@ -35,6 +35,7 @@ import { PurchaseResponseDirective } from './directives/purchase-response.direct
 import { HoverArticleDirective } from './directives/hover-article.directive';
 import { EqualValidatorDirective } from './directives/equal-validator.directive';
 import { AuthGuard } from './core/auth.guard';
+import { NotFoundComponent } from './components/notfound.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -64,7 +65,8 @@ import { AuthGuard } from './core/auth.guard';
     ThumbnailHoverDirective,
     PurchaseResponseDirective,
     HoverArticleDirective,
-    EqualValidatorDirective],
+    EqualValidatorDirective,
+    NotFoundComponent],
   providers: [ArticlesServiceService, UsersService, AuthenticationService, WineService, AuthGuard],
   bootstrap: [AppComponent]
 })

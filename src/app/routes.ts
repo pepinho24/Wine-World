@@ -10,6 +10,7 @@ import { ArticleCreateComponent } from './components/article-create/article-crea
 import { WineListComponent } from './components/wine-list/wine-list.component';
 import { WineDetailComponent } from './components/wine-detail/wine-detail.component';
 import { AuthGuard } from './core/auth.guard';
+import { NotFoundComponent } from './components/notfound.component';
 
 export const routes: ModuleWithProviders = RouterModule.forRoot([
     {
@@ -42,6 +43,6 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([
         component: WineDetailComponent
     }, {
         path: '**',
-        redirectTo: ''
+        component: NotFoundComponent
     }
 ]);
