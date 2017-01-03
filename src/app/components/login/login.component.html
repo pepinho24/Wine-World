@@ -1,46 +1,16 @@
 <div class="jumbotron">
-    <h2>Data Driven (Reactive) Form</h2>
-    <!-- Right of the bat, we no longer declare a local variable but use the formGroup directive and set it the loginForm object we defined in the constructor. Throughout the form, we will reference the loginForm root object as can be seen in the submitForm function.-->
+    <h2>Log in the World of Wine community</h2>  
     <form [formGroup]="loginForm" (ngSubmit)="submitForm(loginForm.value)">
       <div class="form-group">
-        <label>Username:</label>
-        <!-- Rather than set an ngModel, we use the formControl directive to sync our input to the loginForm object. Notice that we are also setting the attribute we wish the corresponding input to sync with. We no longer need the name attribute, but can optionally add it. -->
-        <input class="form-control" type="text" placeholder="Username" [formControl]="loginForm.controls['username']">
+        <label>Username</label>
+        <input class="form-control" type="text" placeholder="Username" required [formControl]="loginForm.controls['username']">
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input class="form-control" type="password" [formControl]="loginForm.controls['password']">
-      </div>
-      <!--<div class="form-group">
-        <label>Gender</label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="gender" value="Male" [formControl]="loginForm.controls['gender']">
-          Male
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-           This works the same way for radio and checkboxes as can be seen below 
-          <input type="radio" name="gender" value="Female" [formControl]="loginForm.controls['gender']">
-          Female
-        </label>
-      </div>
+        <input class="form-control" type="password" required [formControl]="loginForm.controls['password']">
+      </div>      
       <div class="form-group">
-        <label>Activities</label>
-      </div>
-      <label class="checkbox-inline">
-        <input type="checkbox" value="hiking" name="hiking" [formControl]="loginForm.controls['hiking']"> Hiking
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" value="swimming" name="swimming" [formControl]="loginForm.controls['swimming']"> Swimming
-      </label>
-      <label class="checkbox-inline">
-        <input type="checkbox" value="running" name="running" [formControl]="loginForm.controls['running']"> Running
-      </label>-->
-      <div class="form-group">
-        <button type="submit" class="btn btn-default"  [disabled]="!loginForm.valid">Submit</button>
+        <button type="submit" class="btn btn-default"  [disabled]="!loginForm.valid">Login</button>
       </div>
     </form>
   </div>

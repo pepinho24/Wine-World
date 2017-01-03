@@ -34,6 +34,7 @@ import { ThumbnailHoverDirective } from './directives/thumbnail-hover.directive'
 import { PurchaseResponseDirective } from './directives/purchase-response.directive';
 import { HoverArticleDirective } from './directives/hover-article.directive';
 import { EqualValidatorDirective } from './directives/equal-validator.directive';
+import { AuthGuard } from './core/auth.guard';
 @NgModule({
   imports: [
     BrowserModule,
@@ -63,8 +64,8 @@ import { EqualValidatorDirective } from './directives/equal-validator.directive'
     ThumbnailHoverDirective,
     PurchaseResponseDirective,
     HoverArticleDirective,
-    EqualValidatorDirective  ],
-  providers: [ArticlesServiceService, UsersService,  AuthenticationService, WineService],
+    EqualValidatorDirective],
+  providers: [ArticlesServiceService, UsersService, AuthenticationService, WineService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

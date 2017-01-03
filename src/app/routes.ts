@@ -9,6 +9,7 @@ import { ArticleDetailComponent } from './components/article-detail/article-deta
 import { ArticleCreateComponent } from './components/article-create/article-create.component';
 import { WineListComponent } from './components/wine-list/wine-list.component';
 import { WineDetailComponent } from './components/wine-detail/wine-detail.component';
+import { AuthGuard } from './core/auth.guard';
 
 export const routes: ModuleWithProviders = RouterModule.forRoot([
     {
@@ -22,7 +23,8 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([
         component: ArticleDetailComponent
     }, {
         path: 'articles/create',
-        component: ArticleCreateComponent
+        component: ArticleCreateComponent,
+        canActivate: [AuthGuard],
     }, {
         path: 'about',
         component: AboutComponent
