@@ -33,6 +33,7 @@ import { ArticleCreateComponent } from './components/article-create/article-crea
 import { ThumbnailHoverDirective } from './directives/thumbnail-hover.directive';
 import { PurchaseResponseDirective } from './directives/purchase-response.directive';
 import { HoverArticleDirective } from './directives/hover-article.directive';
+import { EqualValidatorDirective } from './directives/equal-validator.directive';
 @NgModule({
   imports: [
     BrowserModule,
@@ -61,7 +62,8 @@ import { HoverArticleDirective } from './directives/hover-article.directive';
     ArticleCreateComponent,
     ThumbnailHoverDirective,
     PurchaseResponseDirective,
-    HoverArticleDirective  ],
+    HoverArticleDirective,
+    EqualValidatorDirective  ],
   providers: [ArticlesServiceService, UsersService,  AuthenticationService, WineService],
   bootstrap: [AppComponent]
 })
