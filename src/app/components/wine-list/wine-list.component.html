@@ -13,7 +13,7 @@
     </div>
     <div class="col-md-4" *ngFor="let w of wine | sortWine: [sort, order]">
         <a [routerLink]="['/wine', w.getURIEncodedName()]">
-          <div class="thumbnail">
+          <div thumbnail-hover class="thumbnail">
             <img src="{{'http://localhost:3000/images/' + w.image}}" alt="{{w.name}}">
             <div class="caption text-center">
               <h3>{{w.name | truncate: [50]}}</h3>
